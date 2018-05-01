@@ -1,121 +1,30 @@
-<!DOCTYPE html>
-<html lang="kr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/adminLTE.min.css">
-    <link rel="stylesheet" href="/css/skin-red.min.css">
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-</head>
-
-<body class="hold-transition skin-red sidebar-mini">
-    <div class="wrapper">
-        <!-- Main Header -->
-        <header class="main-header">
-
-            <!-- Logo -->
-            <a href="/" class="logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini">
-                    <b>Y</b>TD</span>
-                <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg">
-                    <b>YTD</b>Project</span>
-            </a>
-
-            <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation">
-                <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <span class="sr-only">Toggle navigation</span>
-                </a>
-                <!-- Navbar Right Menu -->
-                <div class="navbar-custom-menu">
-
-                </div>
-            </nav>
-        </header>
-
-         <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-    
-          <!-- Sidebar Menu -->
-          <ul class="sidebar-menu" data-widget="tree">
-            <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-            <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-                <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                  </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#">Link in level 2</a></li>
-                <li><a href="#">Link in level 2</a></li>
-              </ul>
+{% extends "_layout/_default.html" %} {% block title %} Hello, YTD {% endblock %} {% block contents %}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Hello, BBnagDoo!!
+            <small>Optional description</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard"></i> Level</a>
             </li>
-          </ul>
-          <!-- /.sidebar-menu -->
-        </section>
-        <!-- /.sidebar -->
-      </aside>
+            <li class="active">Here</li>
+        </ol>
+    </section>
 
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <h1>
-                    Page Header
-                    <small>Optional description</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-dashboard"></i> Level</a>
-                    </li>
-                    <li class="active">Here</li>
-                </ol>
-            </section>
+    <!-- Main content -->
+    <section class="content container-fluid">
 
-            <!-- Main content -->
-            <section class="content container-fluid">
-
-                <!--------------------------
+        <!--------------------------
             | Your Page Content Here |
             -------------------------->
 
-            </section>
-            <!-- /.content -->
-        </div>
+    </section>
+    <!-- /.content -->
+</div>
 
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            <!-- To the right -->
-            <div class="pull-right hidden-xs">
-                CEO BBangDoo.
-            </div>
-            <!-- Default to the left -->
-            <strong>Copyright &copy; 2018
-                <a href="#">YTD</a>.</strong> All rights reserved.
-        </footer>
-    </div>
-
-
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/adminlte.min.js"></script>
-
-</body>
-
-</html>
+{% endblock %}
