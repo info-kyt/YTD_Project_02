@@ -1,4 +1,5 @@
-# YTD_Project_02
+YTD_Project_02
+==
 Board with MongoDB
 
 ## 1. MongoDB 설치
@@ -60,3 +61,39 @@ security:
 # 서비스 등록
 $ "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --install --serviceName "MongoDB 3.6" --serviceDisplayName "MongoDB(로컬 개발용)" --serviceDescription "YTD 프로젝트 개발용" --config "C:\mongodb\mongod.conf"
  ```
+
+## 2. Project 초기화
+```bash
+$ npm install -g express
+$ npm instlal -g express-generator
+$ express --view==ejs .
+$ npm install nunjucks --save
+$ npm install
+```
+
+app.js 파일 수정
+```js
+var nunjucks = require('nunjucks');
+
+// view engine setup
+nunjucks.configure("views", {
+  autoescape: true,
+  express: app
+});
+app.set("view engine", "nunjucks");
+```
+index.html 파일 추가
+
+
+
+## 3. bootstrap & jquery 설치
+ ```bash
+ $ npm install bootstrap@3.3.7 jquery --save
+ ```
+
+```javascript
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
+```
+

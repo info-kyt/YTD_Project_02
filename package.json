@@ -1,0 +1,19 @@
+{
+  "name": "02-board",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env PORT=80 nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "cross-env": "^5.1.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "nunjucks": "^3.1.2"
+  }
+}
